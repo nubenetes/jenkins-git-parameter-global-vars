@@ -1,0 +1,31 @@
+# ==============================================================================
+# Global Variables: STAGING Environment (UAT)
+# ==============================================================================
+environment: staging
+clusterName: ocp-staging
+domain: apps.ocp-staging.nubenetes.internal
+dnsZone: staging.nubenetes.internal
+targetNamespace: nubenetes-staging-apps
+
+applications:
+  jhipster-microservice:
+    version: "2.1.0-40-f8e7d6c"
+    replicas: 3
+    memoryLimit: "1024Mi"
+    cpuLimit: "1500m"
+  angular-frontend:
+    version: "1.5.0-16-c3b2a1f"
+    replicas: 3
+    memoryLimit: "512Mi"
+    cpuLimit: "1000m"
+
+observability:
+  logLevel: INFO
+  tracingSampleRate: "0.5"
+  metricsIntervalSeconds: 15
+
+database:
+  host: postgresql-staging.nubenetes-staging-apps.svc.cluster.local
+  port: 5432
+  poolSize: 25
+  sslMode: require

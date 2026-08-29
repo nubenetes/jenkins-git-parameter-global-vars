@@ -1,0 +1,11 @@
+replicaCount: 3
+image:
+  repository: image-registry.openshift-image-registry.svc:5000/nubenetes-staging-apps/jhipster-microservice
+  tag: "2.1.0-40-f8e7d6c"
+resources:
+  requests:
+    cpu: 500m
+    memory: 512Mi
+  limits:
+    cpu: 1500m
+    memory: 1024Mi

@@ -1,0 +1,4 @@
+replicaCount: 2
+image:
+  repository: image-registry.openshift-image-registry.svc:5000/nubenetes-dev-apps/angular-frontend
+  tag: "1.5.0-18-d4e5f6a"

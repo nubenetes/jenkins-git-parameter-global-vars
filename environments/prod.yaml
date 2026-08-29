@@ -1,0 +1,31 @@
+# ==============================================================================
+# Global Variables: PRODUCTION Environment (High Availability)
+# ==============================================================================
+environment: prod
+clusterName: ocp-prod
+domain: apps.ocp-prod.nubenetes.internal
+dnsZone: prod.nubenetes.internal
+targetNamespace: nubenetes-prod-apps
+
+applications:
+  jhipster-microservice:
+    version: "2.0.8-35-e1d2c3b"
+    replicas: 6
+    memoryLimit: "2048Mi"
+    cpuLimit: "2000m"
+  angular-frontend:
+    version: "1.4.9-12-b9a8c7d"
+    replicas: 4
+    memoryLimit: "1024Mi"
+    cpuLimit: "1000m"
+
+observability:
+  logLevel: WARN
+  tracingSampleRate: "0.1"
+  metricsIntervalSeconds: 30
+
+database:
+  host: postgresql-ha.nubenetes-prod-apps.svc.cluster.local
+  port: 5432
+  poolSize: 100
+  sslMode: verify-full

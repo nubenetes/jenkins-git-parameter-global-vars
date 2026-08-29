@@ -1,0 +1,5 @@
+appId: jhipster-microservice
+containerPort: 8080
+healthCheckPath: /actuator/health
+metricsPath: /actuator/prometheus
+jvmOptions: "-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -XX:+UseG1GC"

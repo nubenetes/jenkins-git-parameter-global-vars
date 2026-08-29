@@ -1,0 +1,4 @@
+appId: angular-frontend
+containerPort: 8080
+baseHref: "/"
+apiGatewayPrefix: "/api"

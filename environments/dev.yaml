@@ -1,0 +1,31 @@
+# ==============================================================================
+# Global Variables: DEV Environment
+# ==============================================================================
+environment: dev
+clusterName: ocp-dev
+domain: apps.ocp-dev.nubenetes.internal
+dnsZone: dev.nubenetes.internal
+targetNamespace: nubenetes-dev-apps
+
+applications:
+  jhipster-microservice:
+    version: "2.1.0-42-a1b2c3d"
+    replicas: 2
+    memoryLimit: "512Mi"
+    cpuLimit: "1000m"
+  angular-frontend:
+    version: "1.5.0-18-d4e5f6a"
+    replicas: 2
+    memoryLimit: "256Mi"
+    cpuLimit: "500m"
+
+observability:
+  logLevel: DEBUG
+  tracingSampleRate: "1.0"
+  metricsIntervalSeconds: 15
+
+database:
+  host: postgresql-dev.nubenetes-dev-apps.svc.cluster.local
+  port: 5432
+  poolSize: 10
+  sslMode: prefer

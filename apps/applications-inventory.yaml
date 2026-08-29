@@ -1,0 +1,15 @@
+inventory:
+  - id: jhipster-microservice
+    name: "JHipster Java 21 Spring Boot Microservice"
+    type: backend
+    framework: spring-boot-3.3.4
+    runtime: java-21-temurin
+    repo: https://github.com/nubenetes/jhipster-microservice.git
+    owner: backend-platform-team
+  - id: angular-frontend
+    name: "Modern Angular 18 Single Page Application"
+    type: frontend
+    framework: angular-18
+    runtime: node-20-alpine
+    repo: https://github.com/nubenetes/angular-frontend.git
+    owner: frontend-platform-team

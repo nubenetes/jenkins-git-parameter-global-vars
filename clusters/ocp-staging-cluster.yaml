@@ -1,0 +1,7 @@
+clusterId: "ocp-staging"
+environment: "staging"
+apiEndpoint: "https://api.ocp-staging.nubenetes.internal:6443"
+ingressDomain: "apps.ocp-staging.nubenetes.internal"
+internalRegistry: "image-registry.openshift-image-registry.svc:5000"
+argocdDestinationServer: "https://api.ocp-staging.nubenetes.internal:6443"
+region: "europe-west1-b"

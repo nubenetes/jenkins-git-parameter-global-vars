@@ -1,0 +1,7 @@
+clusterId: "ocp-prod"
+environment: "prod"
+apiEndpoint: "https://api.ocp-prod.nubenetes.internal:6443"
+ingressDomain: "apps.ocp-prod.nubenetes.internal"
+internalRegistry: "image-registry.openshift-image-registry.svc:5000"
+argocdDestinationServer: "https://api.ocp-prod.nubenetes.internal:6443"
+region: "europe-west1-c"
