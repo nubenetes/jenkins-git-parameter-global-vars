@@ -13,6 +13,13 @@
 
 </div>
 
+> [!IMPORTANT]
+> ### 🔗 Linked Platform & CI/CD Orchestrator
+> This repository serves as the centralized GitOps configuration SSOT and is paired with:
+> * 🚀 **Main CI/CD Platform Orchestrator**: [**`nubenetes/jenkins-git-parameter`**](https://github.com/nubenetes/jenkins-git-parameter) — OpenShift 4.20+, JCasC, Job DSL, Jenkinsfiles, OpenTelemetry, Grafana 13.2.0, and ArgoCD 3.5.
+> * 📄 **Platform Bootstrap Configuration**: [`config/environments.env`](https://github.com/nubenetes/jenkins-git-parameter/blob/main/config/environments.env)
+> * ☕ **Workload Reference Microservice**: [**`nubenetes/jhipster-microservice`**](https://github.com/nubenetes/jhipster-microservice)
+
 ---
 
 ## Overview
